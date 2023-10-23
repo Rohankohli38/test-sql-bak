@@ -1,3 +1,4 @@
-BACKUP DATABASE YourSourceDatabase
-TO DISK = 'C:\Backup\YourSourceDatabase.bak'
-WITH INIT, FORMAT;
+BACKUP DATABASE ProdSQLShackDemo
+    TO DISK = '/home/rishi/DBbackups/db.bak'
+    WITH FORMAT;
+GO
