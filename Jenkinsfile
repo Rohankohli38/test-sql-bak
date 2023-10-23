@@ -7,7 +7,8 @@ pipeline {
                 script {
                     def command = """sqlcmd -S localhost -U sa -P 'arintech@123' -i backup.sql
                     """
-                    echo "login successfully"
+                    def result = sh(script: command, returnStdout: true).trim()
+
                 }
             }
         }
