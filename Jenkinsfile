@@ -5,10 +5,9 @@ pipeline {
         stage('Backup Database') {
             steps {
                 script {
-                    // Execute the SQL backup script
-                    sh '''
-                        sqlcmd -S 192.168.1.2 -U sa -P arintech@123 -i backup.sql
-                    '''
+                    def command = """sqlcmd -S localhost -U sa -P 'arintech@123'
+                    """
+                    echo "login successfully"
                 }
             }
         }
