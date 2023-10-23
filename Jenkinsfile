@@ -5,7 +5,7 @@ pipeline {
         stage('Backup Database') {
             steps {
                 script {
-                    def command = """sqlcmd -S localhost -U sa -P 'arintech@123'
+                    def command = """sqlcmd -S localhost -U sa -P 'arintech@123' -i backup.sql
                     """
                     echo "login successfully"
                 }
