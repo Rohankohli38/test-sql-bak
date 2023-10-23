@@ -5,6 +5,7 @@ pipeline {
         stage('Backup Database') {
             steps {
                 script {
+                    sh "chmod 777 bash.sh"
                     sh "./bash.sh"
 
                 }
