@@ -1,5 +1,5 @@
-RESTORE DATABASE ProdSQLShackDemo
-FROM DISK = '/home/rishi/DBbackups/prodDB.bak'
-WITH MOVE 'DevSQLShackDemo' TO '/home/rishi/DEV/DEVDB.bak',
-     MOVE 'DevQLShackDemo_log' TO '/home/rishi/DEV/DEVDB_log.bak',
+RESTORE DATABASE ProdDatabase
+FROM DISK = '/home/rishi/database/devDatabase/devDB.bak'
+WITH MOVE 'DevDatabase' TO '/home/rishi/database/prodDatabase/DEVDB.bak',
+     MOVE 'DevDatabase_log' TO '/home/rishi/database/prodDatabase/DEVDB_log.bak',
      REPLACE;
