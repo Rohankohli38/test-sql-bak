@@ -1,4 +1,4 @@
 BACKUP DATABASE DevDatabase
-    TO DISK = '/home/rishi/database/prodDatabase/devDB.bak'
+    TO DISK = '/home/rishi/database/devDatabase/devDB.bak'
     WITH FORMAT;
 GO
