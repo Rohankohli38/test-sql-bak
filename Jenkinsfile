@@ -5,8 +5,7 @@ pipeline {
         stage('Backup Database') {
             steps {
                 script {
-                    sh "chmod 777 bash.sh"
-                    sh "./bash.sh"
+                    sh "sqlcmd -S 192.168.1.2 -U sa -P arintech@123 -i backup.sql"
 
                 }
             }
