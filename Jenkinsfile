@@ -5,7 +5,7 @@ pipeline {
         stage('Backup Database') {
             steps {
                 script {
-                    sh "/opt/mssql-tools18/bin/sqlcmd -S 192.168.1.2 -U sa -P arintech@123 -i backup.sql"
+                    sh "/opt/mssql-tools18/bin/sqlcmd -S 192.168.1.2 -U sa -P arintech@123 -C -i backup.sql"
 
                 }
             }
