@@ -1,4 +1,4 @@
 BACKUP DATABASE ProdSQLShackDemo
-    TO DISK = '/home/rishi/DBbackups/db.bak'
+    TO DISK = '/home/rishi/DBbackups/prodDB.bak'
     WITH FORMAT;
 GO
